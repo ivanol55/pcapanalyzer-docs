@@ -4,25 +4,25 @@ theme: readthedocs
 nav:
     - 'Home': index.md
     - 'Getting started':
-        - 'Prerequisites': /getting-started/prerequisites/index.md
-        - 'Installation': /getting-started/installation/index.md
-        - 'Post-install': /getting-started/post-install/index.md
+        - 'Prerequisites': getting-started/prerequisites/index.md
+        - 'Installation': getting-started/installation/index.md
+        - 'Post-install': getting-started/post-install/index.md
     - 'Frontend':
-        - 'login': /frontend/login/index.md
-        - 'homepage': /frontend/homepage/index.md
-        - 'packetStream': /frontend/packetstream/index.md
-        - 'dataGlance': /frontend/dataglance/index.md
-        - 'queryRunner': /frontend/queryrunner/index.md
-        - 'dbCreator': /frontend/dbcreator/index.md
-        - 'database picker': /frontend/database-picker/index.md
-        - 'about': /frontend/about/index.md
+        - 'login': frontend/login/index.md
+        - 'homepage': frontend/homepage/index.md
+        - 'packetStream': frontend/packetstream/index.md
+        - 'dataGlance': frontend/dataglance/index.md
+        - 'queryRunner': frontend/queryrunner/index.md
+        - 'dbCreator': frontend/dbcreator/index.md
+        - 'database picker': frontend/database-picker/index.md
+        - 'about': frontend/about/index.md
     - 'Backend':
-        - '.my.cnf': /backend/creds/index.md
-        - 'packetstream': /backend/packetstream/index.md
-        - 'PCAPAnalyzer IDS': /backend/pcapanalyzer-ids/index.md
-        - 'analysisGenerator': /backend/analysis-generator/index.md
+        - '.my.cnf': backend/creds/index.md
+        - 'packetstream': backend/packetstream/index.md
+        - 'PCAPAnalyzer IDS': backend/pcapanalyzer-ids/index.md
+        - 'analysisGenerator': backend/analysis-generator/index.md
     - 'API':
-        - 'authentication': /api/authentication/index.md
-        - 'endpoints': /api/endpoints/index.md
-        - 'reference': /api/reference/index.md
+        - 'authentication': api/authentication/index.md
+        - 'endpoints': api/endpoints/index.md
+        - 'reference': api/reference/index.md
     - 'About': about.md
