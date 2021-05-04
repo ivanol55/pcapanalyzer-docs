@@ -1,4 +1,5 @@
 site_name: PCAPAnalyzer documentation
+site_url: /pcapanalyzer-docs-dev/
 theme: readthedocs
 nav:
     - 'Home': index.md
