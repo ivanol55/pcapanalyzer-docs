@@ -1,5 +1,5 @@
 site_name: PCAPAnalyzer documentation
-site_url: /pcapanalyzer-docs-dev/
+site_url: https://ivanol55.github.io/pcapanalyzer-docs-dev/
 theme: readthedocs
 nav:
     - 'Home': index.md
