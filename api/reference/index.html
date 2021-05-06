@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="https://ivanol55.github.io/pcapanalyzer-docs/api/reference/">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>reference - PCAPAnalyzer documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "reference";
+    var mkdocs_page_input_path = "api/reference/index.md";
+    var mkdocs_page_url = "/pcapanalyzer-docs/api/reference/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> PCAPAnalyzer documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Getting started</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../getting-started/prerequisites/">Prerequisites</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../getting-started/installation/">Installation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../getting-started/post-install/">Post-install</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Frontend</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/login/">login</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/homepage/">homepage</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/packetstream/">packetStream</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/dataglance/">dataGlance</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/queryrunner/">queryRunner</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/dbcreator/">dbCreator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/database-picker/">database picker</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/about/">about</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Backend</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../backend/creds/">.my.cnf</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../backend/packetstream/">packetstream</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../backend/pcapanalyzer-ids/">PCAPAnalyzer IDS</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../backend/analysis-generator/">analysisGenerator</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">API</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../authentication/">authentication</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../endpoints/">endpoints</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">reference</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#dblist">dblist</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#request">Request</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#response">Response</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#insights">insights</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#request_1">Request</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#response_1">Response</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rawnumbers">rawnumbers</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#request_2">Request</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#response_2">Response</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">About</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about/">About this project</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">PCAPAnalyzer documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>API &raquo;</li>
+        
+      
+    
+    <li>reference</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="api-reference">API reference</h1>
+<p>Here you can find example queries and responses to the PCAPAnalyzer API endpoints</p>
+<h2 id="dblist">dblist</h2>
+<h3 id="request">Request</h3>
+<p><code>curl https://{domain}/api/dblist.php?apikey=42af1e890d3</code></p>
+<h3 id="response">Response</h3>
+<pre><code>{
+  "code": 200,
+  "databases": [
+    "packetstream",
+    "analysis_ssh"
+  ]
+}
+</code></pre>
+<h2 id="insights">insights</h2>
+<h3 id="request_1">Request</h3>
+<p><code>curl https://{domain}/api/insights.php?apikey=47d16be1c459&amp;database=packetstream</code></p>
+<h3 id="response_1">Response</h3>
+<pre><code>{
+  "code": 200,
+  "privateips": [
+    "192.168.1.111",
+    "192.168.1.99",
+    "172.17.168.163",
+    "172.17.16.225"
+  ],
+  "publicips": [
+    "216.58.201.170",
+    "13.33.237.133",
+    "151.101.134.214",
+    "52.34.194.35",
+    "216.58.209.74",
+    "52.43.242.4",
+    "93.176.183.102",
+    "192.0.73.2",
+    "142.250.184.161",
+    "192.99.17.213",
+    "45.148.10.66"
+  ],
+  "macaddresses": [
+    "33:33:ff:78:95:4f",
+    "33:33:ff:38:2d:11",
+    "33:33:00:00:00:02",
+    "33:33:00:01:00:02",
+    "33:33:00:00:00:16",
+    "01:00:5e:00:00:fb",
+    "ff:ff:ff:ff:ff:ff",
+    "d8:61:94:e6:db:bf",
+    "7c:d6:61:38:2d:11",
+    "33:33:ff:ad:66:57",
+    "38:22:e2:63:58:b6",
+    "08:00:27:d1:62:8e",
+    "4c:63:71:ad:66:57",
+    "33:33:ff:e1:53:1d",
+    "94:de:80:bc:71:45",
+    "8c:e1:17:e5:f1:2e",
+    "33:33:ff:63:58:b6",
+    "33:33:00:00:00:01",
+    "33:33:00:00:00:fb",
+    "20:89:86:ae:3e:98",
+    "e4:e1:30:78:95:4f",
+    "88:29:9c:c5:3c:45",
+    "01:00:5e:7f:ff:fa"
+  ],
+  "protocolsfound": [
+    "NBNS",
+    "RTMP",
+    "DHCPv6",
+    "TLSv1",
+    "DHCP",
+    "ICMP",
+    "SSH",
+    "OCSP",
+    "TCP",
+    "MDNS",
+    "TLSv1.2",
+    "SSLv2",
+    "PGSQL",
+    "ARP",
+    "ICMPv6",
+    "SSDP",
+    "DNS",
+    "LLC",
+    "TLSv1.3"
+  ],
+  "wellknownports": [
+    "80",
+    "67",
+    "443",
+    "22",
+    "547",
+    "53",
+    "137"
+  ],
+  "registeredports": [
+    "37026",
+    "46671",
+    "46944",
+    "1935",
+    "42440",
+    "42526",
+    "40110",
+    "35364",
+    "34742",
+    "44793",
+    "48748",
+    "38674",
+    "37317",
+    "38352",
+    "37826",
+    "47926",
+    "38530",
+    "44602",
+    "46764",
+    "38100",
+    "37563",
+    "38532",
+    "35293",
+    "48906",
+    "49066",
+    "47280",
+    "1900",
+    "41822",
+    "47668",
+    "35557"
+  ]
+}
+</code></pre>
+<h2 id="rawnumbers">rawnumbers</h2>
+<h3 id="request_2">Request</h3>
+<p><code>curl https://{domain}/api/rawnumbers.php?apikey=47d16be1c459&amp;database=packetstream</code></p>
+<h3 id="response_2">Response</h3>
+<pre><code>{
+  "code": 200,
+  "packetcount": 198990,
+  "datasourcecount": 3,
+  "externalipcount": 75,
+  "maccount": 23,
+  "multicastcount": 139,
+  "protocolcount": 19
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../about/" class="btn btn-neutral float-right" title="About this project">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../endpoints/" class="btn btn-neutral" title="endpoints"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../endpoints/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../about/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
