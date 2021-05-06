@@ -24,3 +24,7 @@ To install the server environment:
 15. If you want to, enable data logging on the PCAPAnalyzer server with `service packetstream start`.
 
 Once this installation is complete, you will have a functional PCAPAnalyzer install to use. To capture data from other machines, continue to the next section.
+
+The resulting permission structure should be as follows:
+
+![Permission schema](permission-schema.png "Server files permission schema")

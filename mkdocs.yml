@@ -25,4 +25,5 @@ nav:
         - 'authentication': api/authentication/index.md
         - 'endpoints': api/endpoints/index.md
         - 'reference': api/reference/index.md
-    - 'About': about.md
+    - 'About': 
+        - 'About this project': about.md
