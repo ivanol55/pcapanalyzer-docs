@@ -11,7 +11,7 @@ When you already have a full server install, you may want to install the agent o
 8. input the password that the server install generated for your PCAPAgent user.
 9. You will be asked to input a machineid. Choose a unique identifier for the host, like its hostname.
 10. input the absolute path where you want to install the agent. The team's recommendation is `/opt/pcapagent/`.
-11. From the listed options, provide the system name of the interface you want the network sniffer to listen on. **[!] you can input `any` to listen on all of the system's interfaces, but you can only have one entry.**
+11. From the listed options, provide the system name of the interface you want the network sniffer to listen on. **[!] YOu can only have one listen entry. You cannot set it to `any`.**
 12. Enable the data logging with `service packetstream start`.
 
 Once this installation is complete, you will have a functional PCAPAnalyzer install to use.
