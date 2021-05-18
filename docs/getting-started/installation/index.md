@@ -22,6 +22,8 @@ To install the server environment:
 14. You will be given a web frontend password for the `admin` account. **save these credentials**, because they are only stored on the database with a non-reversible cryptography algorithm and is not retrievable otherwise.
 15. If you want to, enable data logging on the PCAPAnalyzer server with `service packetstream start`.
 
+**[!] By default, the site is only http-enabled, and thus vulnerable to password sniffing. We strongly suggest enabling https with something like `certbot`, then enable the `HTTPOnly` flag on the main web frontend's `.htaccess` file.**
+
 Once this installation is complete, you will have a functional PCAPAnalyzer install to use. To capture data from other machines, continue to the next section.
 
 The resulting permission structure should be as follows:
