@@ -1,6 +1,6 @@
 # PCAPAnalyzer project documentation
 
-Welcome! This is the site where you'll find reference documentation for all things PCAPAnalyzer, from frontend usage, to backend management, to API interaction.
+Welcome! This is the site where you'll find reference documentation for all things [PCAPAnalyzer](https://ivanol55.github.io/pcapanalyzer/), from frontend usage, to backend management, to API interaction.
 
 ## Documentation structure
 - **getting started** - your starting point 
