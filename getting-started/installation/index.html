@@ -166,6 +166,7 @@
 <li>You will be given a web frontend password for the <code>admin</code> account. <strong>save these credentials</strong>, because they are only stored on the database with a non-reversible cryptography algorithm and is not retrievable otherwise.</li>
 <li>If you want to, enable data logging on the PCAPAnalyzer server with <code>service packetstream start</code>.</li>
 </ol>
+<p><strong>[!] By default, the site is only http-enabled, and thus vulnerable to password sniffing. We strongly suggest enabling https with something like <code>certbot</code>, then enable the <code>HTTPOnly</code> flag on the main web frontend's <code>.htaccess</code> file.</strong></p>
 <p>Once this installation is complete, you will have a functional PCAPAnalyzer install to use. To capture data from other machines, continue to the next section.</p>
 <p>The resulting permission structure should be as follows:</p>
 <p><img alt="Permission schema" src="permission-schema.png" title="Server files permission schema" /></p>
