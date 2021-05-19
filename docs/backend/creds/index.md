@@ -28,7 +28,7 @@ The `path` category tag stores the absolute system paths for needed directories:
 
 The `interfaces` category tag stores data about the listening system for `packetstream`:
 
-- `interface`: the interface that the `packetstream` system listens on. it can be set to `any`, but it can only have one value.
+- `interface`: the interface that the `packetstream` system listens on. it can be set to any of the interfaces on the system, but it can only have one value. It cannot be set to `any`.
 
 ## queryrunner
 

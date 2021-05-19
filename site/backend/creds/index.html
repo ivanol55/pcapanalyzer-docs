@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="https://ivanol55.github.io/pcapanalyzer-docs/backend/creds/">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>.my.cnf - PCAPAnalyzer documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = ".my.cnf";
+    var mkdocs_page_input_path = "backend/creds/index.md";
+    var mkdocs_page_url = "/pcapanalyzer-docs/backend/creds/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> PCAPAnalyzer documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Getting started</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../getting-started/prerequisites/">Prerequisites</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../getting-started/installation/">Installation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../getting-started/post-install/">Post-install</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Frontend</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/login/">login</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/homepage/">homepage</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/packetstream/">packetStream</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/dataglance/">dataGlance</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/queryrunner/">queryRunner</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/dbcreator/">dbCreator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/database-picker/">database picker</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../frontend/about/">about</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Backend</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">.my.cnf</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#client">client</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#paths">paths</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#interfaces">interfaces</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#queryrunner">queryrunner</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#credchecking">credchecking</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../packetstream/">packetstream</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../pcapanalyzer-ids/">PCAPAnalyzer IDS</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../analysis-generator/">analysisGenerator</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">API</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../api/authentication/">authentication</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../api/endpoints/">endpoints</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../api/reference/">reference</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">About</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about/">About this project</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">PCAPAnalyzer documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Backend &raquo;</li>
+        
+      
+    
+    <li>.my.cnf</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="server-credentials">Server credentials</h1>
+<p>On the backend folder of your PCAPAnalyzer server install you'll see a file called <code>.my.cnf</code>. This file is the central authentication credential and variable source for the server install. Inside your file you will find five categories:</p>
+<ul>
+<li><code>client</code></li>
+<li><code>paths</code></li>
+<li><code>interfaces</code></li>
+<li><code>queryrunner</code></li>
+<li><code>credchecking</code></li>
+</ul>
+<h2 id="client">client</h2>
+<p>The <code>client</code> category tag stores declarations for data about the current client system:</p>
+<ul>
+<li><code>host</code>: an IP address pointing to the IP address where your PostgreSQL PCAPAnalyzer instance is hosted on.</li>
+<li><code>user</code>: the name that the system uses to login to the database for general tasks.</li>
+<li><code>password</code>: the password for the general tasks user.</li>
+<li><code>database</code>: the name of the main database, generally <code>packetstream</code>.</li>
+<li><code>machineid</code>: a unique system name for the packetstream capture system to insert into its data.</li>
+</ul>
+<h2 id="paths">paths</h2>
+<p>The <code>path</code> category tag stores the absolute system paths for needed directories:</p>
+<ul>
+<li><code>basedir</code>: the absolute base filesystem directory where your PCAPAnalyzer install is located.</li>
+</ul>
+<h2 id="interfaces">interfaces</h2>
+<p>The <code>interfaces</code> category tag stores data about the listening system for <code>packetstream</code>:</p>
+<ul>
+<li><code>interface</code>: the interface that the <code>packetstream</code> system listens on. it can be set to any of the interfaces on the system, but it can only have one value. It cannot be set to <code>any</code>.</li>
+</ul>
+<h2 id="queryrunner">queryrunner</h2>
+<p>The <code>queryrunner</code> category tag stores information needed for the <code>queryrunner</code> side of the web frontend:</p>
+<ul>
+<li><code>selectuser</code>: The username on the <code>PostgreSQL</code> system that is <strong>only</strong> allowed to select data, from all of the PCAPAnalyzer databases.</li>
+<li><code>selectpassword</code>: the password configured on install for the user mentioned above.</li>
+</ul>
+<h2 id="credchecking">credchecking</h2>
+<p>The <code>credchecking</code> category tag stores information needed to connect to the database that stores frontend accounts and API keys:</p>
+<ul>
+<li><code>user</code>: the <code>PostgreSQL</code> install system user that can work with the <code>pcapanalyzer_creds</code> database to check and manage users and API keys.</li>
+<li><code>password</code>: The <code>PostgreSQL</code> password for the user mentioned above.</li>
+<li><code>host</code>: the database host where the PCAPAnalyzer install was made. Generally the same as the one on the <code>client</code> category tag.</li>
+<li><code>database</code>: the name of the database where the system will look for credentials, generally <code>pcapanalyzer_creds</code>.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../packetstream/" class="btn btn-neutral float-right" title="packetstream">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../frontend/about/" class="btn btn-neutral" title="about"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../frontend/about/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../packetstream/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
