@@ -3,6 +3,8 @@ Once all of the system requirements are met, you can proceed on installing your 
 
 ## Server install
 
+**[!] Change to the privileged root user with `su - root`. Other methods like `sudo su` will give errors mid-install with Apache's commands.**
+
 To install the server environment:
 
 1. `git clone` the [PCAPAnalyzer installer repo](https://github.com/ivanol55/pcapanalyzer)
